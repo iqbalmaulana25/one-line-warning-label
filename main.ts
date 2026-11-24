@@ -3,7 +3,11 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const line =
-  "WARNING: This human makes permanent decisions at 3 a.m., stores every password in 'I'll remember it,' and has agreed to 4,000 terms and conditions unread.";
+  "WARNING: This human makes permanent decisions at 3 a.m., backs up every password to 'I'll remember it,' and will click 'I agree' on anything — including this.";
+
+if ([...line].length > 160) {
+  throw new Error(`warning label too long: ${[...line].length} chars`);
+}
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line + "\n", "utf8");
