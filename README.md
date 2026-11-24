@@ -15,4 +15,4 @@ cat /output/entry.txt
 
 ## Entry
 
-> WARNING: This human makes permanent decisions at 3 a.m., backs up every password to 'I'll remember it,' and will click 'I agree' on anything — including this.
+> WARNING: This human makes permanent decisions at 3 a.m., backs up passwords to 'I'll remember it,' and will click 'I agree' on anything — including this.
